@@ -5,6 +5,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.AddDefaultHealthChecks();
+builder.ConfigureOpenTelemetry();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -37,6 +40,8 @@ app.MapGet("/weatherforecast", () =>
 .WithOpenApi();
 
 app.Run();
+
+app.MapDefaultEndpoints();
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 {

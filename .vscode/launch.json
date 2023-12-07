@@ -13,7 +13,8 @@
             "args": [],
             "cwd": "${workspaceFolder}/Victor.Aspire.API.AppHost",
             "console": "internalConsole",
-            "stopAtEntry": false
+            "stopAtEntry": false,
+            "launchSettingsProfile": "http"
         },
         {
             "name": ".NET Core Attach",
