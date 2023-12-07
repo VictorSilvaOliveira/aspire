@@ -5,9 +5,14 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <InvariantGlobalization>true</InvariantGlobalization>
+    <ContainerImageName>victor/api</ContainerImageName>
+    <ContainerBaseImage>mcr.microsoft.com/dotnet/aspnet:8.0</ContainerBaseImage>
+    <Version>0.0.1</Version>
+    <ContainerImageTag>0.0.1</ContainerImageTag>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Aspire.StackExchange.Redis.OutputCaching" Version="8.0.0-preview.1.23557.2" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
