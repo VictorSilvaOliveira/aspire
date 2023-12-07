@@ -1,0 +1,6 @@
+@Victor.Aspire.API.Service_HostAddress = http://localhost:5228
+
+GET {{Victor.Aspire.API.Service_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
