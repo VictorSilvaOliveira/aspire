@@ -54,7 +54,7 @@ app.MapGet("/weatherforecast", (IDatabase db) =>
             .ToArray();
         db.StringSet("default", JsonSerializer.Serialize(forecast));
     }
-    return ;
+    return forecast;
 })
 .WithName("GetWeatherForecast")
 .WithOpenApi();

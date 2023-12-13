@@ -36,6 +36,15 @@
                 "${workspaceFolder}/Victor.Aspire.API.sln"
             ],
             "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "waiting",
+            "command": "${workspaceFolder}/waiting_shell.sh",
+            "type": "shell",
+            "args": [
+                "Victor.Aspire.API.Service"
+            ],
+            "windows": "${workspaceFolder}/waiting_shell.cmd"
         }
     ]
 }

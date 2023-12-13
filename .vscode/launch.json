@@ -19,7 +19,19 @@
         {
             "name": ".NET Core Attach",
             "type": "coreclr",
-            "request": "attach"
+            "request": "attach",
+            "processName": "Victor.Aspire.API.Service",
+            "preLaunchTask": "waiting"
         }
-    ]
+    ],
+    "compounds": [
+        {
+          "name": "Aspire & API",
+          "configurations": [
+            ".NET Core Launch (console)",
+            ".NET Core Attach"
+          ],
+          "stopAll": true
+        }
+      ]
 }
