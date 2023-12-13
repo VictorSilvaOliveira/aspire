@@ -1,37 +1,37 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": ".NET Core Launch (console)",
-            "type": "coreclr",
-            "request": "launch",
-            "preLaunchTask": "build",
-            "program": "${workspaceFolder}/Victor.Aspire.API.AppHost/bin/Debug/net8.0/Victor.Aspire.API.AppHost.dll",
-            "args": [],
-            "cwd": "${workspaceFolder}/Victor.Aspire.API.AppHost",
-            "console": "internalConsole",
-            "stopAtEntry": false,
-            "launchSettingsProfile": "http"
-        },
-        {
-            "name": ".NET Core Attach",
-            "type": "coreclr",
-            "request": "attach",
-            "processName": "Victor.Aspire.API.Service",
-            "preLaunchTask": "waiting"
-        }
-    ],
-    "compounds": [
-        {
-          "name": "Aspire & API",
-          "configurations": [
-            ".NET Core Launch (console)",
-            ".NET Core Attach"
-          ],
-          "stopAll": true
-        }
-      ]
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": ".NET Core Launch (console)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/Victor.Aspire.API.AppHost/bin/Debug/net8.0/Victor.Aspire.API.AppHost.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/Victor.Aspire.API.AppHost",
+      "console": "internalConsole",
+      "stopAtEntry": false,
+      "launchSettingsProfile": "http"
+    },
+    {
+      "name": ".NET Core Attach",
+      "type": "coreclr",
+      "request": "attach",
+      "processName": "Victor.Aspire.API.Service",
+      "preLaunchTask": "waiting"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Aspire & API",
+      "configurations": [
+        ".NET Core Launch (console)",
+        ".NET Core Attach"
+      ],
+      "stopAll": true
+    }
+  ]
 }

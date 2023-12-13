@@ -44,7 +44,9 @@
             "args": [
                 "Victor.Aspire.API.Service"
             ],
-            "windows": "${workspaceFolder}/waiting_shell.cmd"
+            "windows": {
+                "command": "${workspaceFolder}/waiting_shell.ps1"
+            }
         }
     ]
 }
