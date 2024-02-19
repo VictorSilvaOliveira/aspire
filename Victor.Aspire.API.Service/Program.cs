@@ -16,7 +16,7 @@ builder.ConfigureOpenTelemetry();
 
 builder.Services.AddSingleton((option) =>
     ConnectionMultiplexer.Connect(
-        builder.Configuration.GetConnectionString("redis")
+        builder.Configuration?.GetConnectionString("redis")??String.Empty
     ).GetDatabase() 
 );
 
